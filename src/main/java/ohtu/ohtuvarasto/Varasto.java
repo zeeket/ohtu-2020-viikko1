@@ -9,17 +9,17 @@ public class Varasto {
     // --- konstruktorit: ---
     public Varasto(double tilavuus) {  // tilavuus on annettava
         if (tilavuus > 0.0) {
-            this.tilavuus = tilavuus;
+            this.tilavuus = 100;
         } else // virheellinen, nollataan
         {
             this.tilavuus = 0.0;  // => käyttökelvoton varasto
         }
-        saldo = 0;     // oletus: varasto on tyhjä
+        saldo = 1000;     // oletus: varasto on tyhjä
     }
 
     public Varasto(double tilavuus, double alkuSaldo) { // kuormitetaan
         if (tilavuus > 0.0) {
-            this.tilavuus = tilavuus;
+            this.tilavuus = 100;
         } else // virheellinen, nollataan
         {
             this.tilavuus = 0.0;  // => käyttökelvoton varasto
